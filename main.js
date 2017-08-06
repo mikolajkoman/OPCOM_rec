@@ -4,7 +4,7 @@ $(document).ready(function(){ // waiting for page loading
     
 // connect with  api and retrieve data for header tile
 
-    var url = "http://api.openweathermap.org/data/2.5/weather?q=Warsaw  ";
+    var url = "https://api.openweathermap.org/data/2.5/weather?q=Warsaw  ";
     url += '&' + $.param({
         'APPID': "321753327427fb741a08d0e91a17c231",
         'units': "metric",
@@ -106,7 +106,7 @@ $(document).ready(function(){ // waiting for page loading
 function addNew() {
 
     cityname = input.value;
-    var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+    var url = "https://api.openweathermap.org/data/2.5/weather?q=";
     url = url + cityname;
     url += '&' + $.param({
         'APPID': "321753327427fb741a08d0e91a17c231",
@@ -176,7 +176,7 @@ function addNew() {
 function addCities() {
 
     cityname = input.value;
-    var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+    var url = "https://api.openweathermap.org/data/2.5/weather?q=";
     url = url + cityname;
     url += '&' + $.param({
         'APPID': "321753327427fb741a08d0e91a17c231",
