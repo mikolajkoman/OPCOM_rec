@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700)
+
+$bg-color: #fff 
+$text-color:  #000
+$bg-image: url(img/image.jpeg)
+$text-font: 'Averia Sans Libre'
+
+
+.container
+	padding-top: 50px
+	padding-bottom: 50px
+	max-width: 1200px
+	margin: 0 auto
+
+
+body
+	background-color: $bg-color
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), $bg-image
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-size: cover
+	background-position: center
+	min-height: 100vh
+	width: 100%
+	color: $text-color
+	font-family: $text-font
+	letter-spacing: 1px 
+	float: none
+	margin: 0 auto
+	text-align: center
+	
+	#preloader 
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0,0,0,0.7)
+		z-index: 5
+
+	#preloader #image 
+		width: 100%
+		height: 100%
+		position: absolute
+		background: rgba(0,0,0,0.7) url(img/default.gif) no-repeat center
+	nav
+		background: rgba(255, 255, 255, 0.6) !important
+		border-radius: 0 !important
+		a
+			color: $text-color !important
+	.main
+		padding: 20px
+		background-color: rgba(255, 255, 255, 0.5)
+		border: 0
+		border-radius: 15px
+		margin:  80px 5% 0
+		ma
+		min-height: 40vh
+		width: auto
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+		p
+			background-color: rgba(255, 255, 255, 0.0)
+			margin-top: 10px
+			padding: 5px
+		h1
+			display: block
+			margin-bottom: 20px
+		
+		.left
+			img
+				width: 100px
+				height: auto
+				opacity: 0.5
+				border-radius: 15px
+			width: 50%
+			float: left
+			display: inline-block
+		.right
+			width: 50%
+			display: inline-block
+	.col-md-4
+		padding: 15px
+		.location
+			padding: 0
+			cursor: pointer
+			display: inline-block
+			position: relative
+			padding: 15px
+			background-color: rgba(255, 255, 255, 0.5)
+			border: 0
+			border-radius: 15px
+			height: 300px
+			width: 100%
+			margin: 15px 15px 15px 0
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+		&:first-child
+			div
+				background-color: rgba(231, 76, 60, 0.5)
+		&:nth-child(2)
+			div
+				background-color: rgba(211, 84, 0, 0.5)
+		&:nth-child(3)
+			div
+				background-color: rgba(41, 128, 185, 0.5)
+		&:nth-child(4)
+			div
+				background-color: rgba(52, 73, 94, 0.5)
+		&:nth-child(5)
+			div
+				background-color: rgba(149, 165, 166, 0.5)
+		&:nth-child(6)
+			div
+				background-color: rgba(243, 156, 18, 0.5)
+		.locationAdd
+			transition:  0.5s
+			.fa-plus
+				color: rgba(0, 0, 0, 0.7)
+				font-size: 120px
+				padding-top: 20%
+				width: 100%
+				height: 100%
+				margin: 0 auto
+			&:hover
+				background-color: rgba(0, 0, 0, 0.5)
+				.fa-plus
+					color: rgba(255, 255, 255, 0.5)
+			#cityForm
+				margin-top: 30%
+				input
+					text-align: center
+					border-radius: 15px
+					line-height: 40px
+					font-size: 25px
+					padding: 5px
+					border: none
+					outline: none
+				button
+					line-height: 20px
+					background-color: #fff
+					border-radius: 0 0 15px   15px 
+					border: none
+					outline: none
+
+p
+	margin-top: 20px
+	padding: 15px
+	background-color: rgba(0, 0, 0, 0.4)
+	font-size: 20px
+span
+	font-size: 50px
+	color: #fff
+h1
+	display: inline-block
+img
+	transform: scale(1.5)
+
+ul
+	list-style-type: none
+	padding: 0
+.hidden
+	transition: 5s
+	opacity: 0
+	visibility: hidden
